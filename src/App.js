@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import LoginForm from './LoginForm'; // Import the LoginForm component
+import './App.css'; // This is where you'll write CSS for your app
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        {/* You can add a header if you like */}
       </header>
+      <main>
+        <LoginForm /> {/* This renders the login form */}
+      </main>
     </div>
   );
 }
